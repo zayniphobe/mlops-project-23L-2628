@@ -7,7 +7,7 @@ Assignment 1 for the course MLOps (FAST NUCES). This is a minimal, reproducible 
 ├── data/                     # raw dataset (ignored by git)
 │   └── dataset.csv
 ├── src/
-│   └── train_STUDENT_ID.py   # training script
+│   └── train_23L_2628.py   # training script
 ├── model/                    # trained model output (ignored by git)
 ├── .gitignore
 ├── requirements.txt

@@ -1,0 +1,32 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# folders
+data/
+include/
+lib/
+bin/
+pyvenv.cfg
+pip-selfcheck.json
+
+# Model artifacts
+model/
+*.pkl
+*.joblib
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# ide/os
+.vscode/
+.DS_Store
+Thumbs.db

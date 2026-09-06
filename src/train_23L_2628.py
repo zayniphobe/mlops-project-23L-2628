@@ -11,6 +11,7 @@ modelPath = os.path.join(modelDir, f"model_{studentId}.pkl")
 targetColumn = "median_house_value"
 nEstimators = 100
 randomState = 42
+learningRate = 0.05 # added for part 3
 
 # Load the dataset
 def loadData(path: str) -> pd.DataFrame:
@@ -42,7 +43,7 @@ def preprocess(data: pd.DataFrame):
 
 #train the model
 def trainModel(xTrain, yTrain):
-    print(f"[{studentId}] Training RandomForestRegressor...")
+    print(f"[{studentId}] Training RandomForestRegressor (learning_rate={learningRate})...")
 
     model = RandomForestRegressor(
         n_estimators=nEstimators,

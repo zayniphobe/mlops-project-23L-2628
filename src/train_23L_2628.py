@@ -32,6 +32,8 @@ def preprocess(data: pd.DataFrame):
     x = data.drop(columns=[targetColumn])
     y = data[targetColumn]
 
+    x = (x - x.mean()) / x.std()  # z score normalisation added for part 4
+
     xTrain, xTest, yTrain, yTest = train_test_split(
         x,
         y,
